@@ -7,8 +7,9 @@ WORKDIR /app
 ENV PATH /app/bin:$PATH
 
 COPY Gemfile Gemfile.lock /app/
-COPY vendor/cache /app/vendor/cache
-RUN bundle install --local -j $(nproc)
+# COPY vendor/cache /app/vendor/cache
+# RUN bundle install --local -j $(nproc)
+RUN bundle install
 
 COPY . /app/
 
