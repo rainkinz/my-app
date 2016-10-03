@@ -3,7 +3,7 @@ require 'sinatra/base'
 
 class App < Sinatra::Base
   get '/' do
-    'Hello World!'
+    'Hello WayBetter World!'
   end
 
   get '/ping' do
